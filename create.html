@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Add Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      #addbtn{
+        padding:8px 20px;
+        margin-top:15px;
+        transition: background 0.8s;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+      }
+      #addbtn:hover{
+          background: violet;
+      }
+      body>a{
+        text-decoration: none;
+        color: royalblue;
+        transition: color 0.8s;
+      }
+      body>a:hover{
+        color:navy;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="index.php"><h3>Home</h3></a>
+    <br />
+
+    <form action="create.php" method="post" name="form1">
+      <div style="width: 25%">
+        <div class="flex">
+          <label>ID</label>
+          <input type="number" name="employeeNumber" required />
+        </div>
+        <div class="flex">
+          <label>First Name</label>
+          <input type="text" name="firstName" required />
+        </div>
+        <div class="flex">
+          <label>Last Name</label>
+          <input type="text" name="lastName" required />
+        </div>
+        <div class="flex">
+          <label>Extension</label>
+          <input type="number" name="extension" required />
+        </div>
+        <div class="flex">
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="flex">
+          <label>Office Code</label>
+          <input type="number" name="officeCode" required />
+        </div>
+        <div class="flex">
+          <label>Reports To</label>
+          <input type="number" name="reportsTo" required />
+        </div>
+        <div class="flex">
+          <label>Job Title</label>
+          <input type="text" name="jobTitle" required />
+        </div>
+        <div class="flex">
+          <label for="img">Profile Picture:</label>
+          <input type="file" name="picPath" accept="image/*" />
+        </div>
+        <div class="flex">
+          <input type="submit" name="Submit" value="Add" id="addbtn"/>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
